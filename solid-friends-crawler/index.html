@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Solid Friends Crawler</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Solid Friends Crawler</h1>
+    </header>
+
+    <section>
+      <p id="login">
+        You are not logged in.
+        <button>Log in.</button>
+      </p>
+      <p id="logout">
+        You are logged in as <span id="user"></span>.
+        <button>Log out.</button>
+      </p>
+    </section>
+
+    <section>
+      <p>
+        <label for="profile">Profile:</label>
+        <input id="profile" value="https://ruben.verborgh.org/profile/#me">
+        <button id="view">View</button>
+      </p>
+
+      <canvas width="500" height="500"></canvas>
+    </section>
+
+    <footer>
+      based on <a href="https://solid.inrupt.com/docs/app-on-your-lunch-break">Solid lunchbreak tutorial</a>
+    </footer>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/solid-auth-client.bundle.js"></script>
+    <script src="scripts/rdflib.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="scripts/graph.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
